@@ -1,0 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.cv-section');
+
+    sections.forEach(section => {
+        section.addEventListener('mouseenter', () => {
+            section.style.backgroundColor = '#fcfcfc';
+            section.style.transition = 'background-color 0.3s ease';
+        });
+
+        section.addEventListener('mouseleave', () => {
+            section.style.backgroundColor = 'transparent';
+        });
+    });
+});
